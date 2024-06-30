@@ -1,0 +1,13 @@
+Ten program jest przykładowym podejściem do automatycznego generowania opisów 
+dla zdjęć przy użyciu prostych metod. Aby uzyskać bardziej zaawansowane i precyzyjne 
+opisy, warto zastanowić się nad użyciem bardziej złożonych modeli NLP, takich jak 
+sieci neuronowe oparte na LSTM lub Transformer.
+
+
+Co dokładnie robi ten program:
+1. Wczytuje model InceptionV3.
+2. Przetwarza obraz, aby był zgodny z wymaganiami modelu.
+3. Ekstrahuje cechy obrazu za pomocą modelu InceptionV3.
+4. Na podstawie wyekstrahowanych cech porównuje je z prostym słownikiem opisów.
+5. Generuje i wyświetla opis obrazu na podstawie najbardziej podobnej kategorii.
+
