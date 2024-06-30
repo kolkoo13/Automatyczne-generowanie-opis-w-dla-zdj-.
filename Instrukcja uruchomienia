@@ -1,0 +1,7 @@
+Aby urochomić program należy mieć zainstalowany na komputerze:
+Python3 - https://www.python.org/downloads/
+
+Po zainstalowaniu pythona możemy przejść do "Wiersza polecenia" CMD wejśc w katalog w którym 
+znajduje się nasz kod programu wraz ze zdjęciem poprzez kkomendy `cd ścieżkafolderu`.
+Będąc w folderze wpisujemy `python fota.py`.
+Program pobierze zdjęcie oraz po chwili wygeneruje opis. 
