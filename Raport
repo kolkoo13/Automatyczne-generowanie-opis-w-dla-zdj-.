@@ -1,0 +1,29 @@
+1. Wstęp
+Program został zaprojektowany, aby automatycznie generować opisy dla zdjęć. 
+Wykorzystuje model InceptionV3 do ekstrakcji cech z obrazów oraz prosty mechanizm do mapowania tych cech na predefiniowane opisy. 
+Głównym celem projektu jest demonstracja możliwości przetwarzania obrazu i podstawowego generowania tekstu przy użyciu bibliotek takich jak TensorFlow, Keras, OpenCV i NLTK.
+
+2. Szczegóły Techniczne
+2.1. Model InceptionV3
+Model InceptionV3 jest pretrenowanym modelem sieci neuronowej, który został wytrenowany na zbiorze danych ImageNet. W projekcie został użyty do ekstrakcji cech obrazu. Wektor cech uzyskany z modelu jest następnie używany do generowania opisu obrazu.
+
+2.2. Przetwarzanie Obrazu
+Obraz jest przetwarzany za pomocą OpenCV, co obejmuje wczytanie obrazu, zmianę jego rozmiaru oraz przeskalowanie wartości pikseli, aby były zgodne z wymaganiami modelu InceptionV3.
+
+2.3. Generowanie Opisu
+Program korzysta z prostego mechanizmu mapowania cech obrazu na predefiniowane opisy. Opisy są przechowywane w słowniku, a ich wybór odbywa się na podstawie miary BLEU, która porównuje wektor cech obrazu z etykietami opisów.
+
+2.4. Biblioteki
+TensorFlow i Keras - Do implementacji modelu InceptionV3.
+OpenCV - Do przetwarzania obrazu.
+NumPy - Do operacji na tablicach wielowymiarowych.
+NLTK - Do przetwarzania tekstu i obliczania miary BLEU.
+
+3. Ograniczenia i Możliwości Rozwoju
+3.1 Ograniczenia
+Prostota modelu: Obecna wersja używa bardzo prostego modelu mapowania cech na opisy, co ogranicza dokładność i zróżnicowanie generowanych opisów.
+Słownik opisów: Program korzysta z ograniczonego słownika predefiniowanych opisów.
+3.2 Możliwości Rozwoju
+Zaawansowane modele NLP: Implementacja bardziej zaawansowanych modeli do generowania opisów, takich jak LSTM lub Transformer.
+Rozbudowa słownika: Dodanie większej liczby kategorii i bardziej zróżnicowanych opisów.
+Trenowanie własnych modeli: Użycie większych zbiorów danych do trenowania własnych modeli w celu uzyskania bardziej precyzyjnych wyników.
