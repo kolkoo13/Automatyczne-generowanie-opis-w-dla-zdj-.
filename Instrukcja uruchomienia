@@ -5,3 +5,5 @@ Po zainstalowaniu pythona możemy przejść do "Wiersza polecenia" CMD wejśc w 
 znajduje się nasz kod programu wraz ze zdjęciem poprzez kkomendy `cd ścieżkafolderu`.
 Będąc w folderze wpisujemy `python fota.py`.
 Program pobierze zdjęcie oraz po chwili wygeneruje opis. 
+W programie zostały użyte 3 przykłady pies, kot, samochód. Program rozpopznaje co znajduję się na rysunku (z tych 3 podanych rzeczy)
+Zdjęcie które dołączam to PIES.
